@@ -10,7 +10,7 @@ end
 route %(mount Shipit::Engine, at: '/')
 
 gem 'sidekiq'
-gem 'shipit-engine'
+gem 'shipit-engine', git: 'https://github.com/goodtouch/shipit-engine'
 gsub_file 'Gemfile', "# Use Redis adapter to run Action Cable in production", ''
 gsub_file 'Gemfile', "# gem 'redis'", "gem 'redis'"
 
